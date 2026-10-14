@@ -17,11 +17,15 @@ namespace VillageIntel
 {
     /// <summary>
     /// Adds "What news is there of trouble around here?" to conversations with village notables.
-    /// Three questions (enemy war parties, bandit gangs, bandit hideouts), each paid for separately.
-    /// The notable may refuse, ask for gold or goods, be talked round with the vanilla persuasion
-    /// system, know nothing, or lie, depending on how they feel about you compared with how they feel
-    /// about the party you're asking about. They first give a short list (kind of party and head count);
-    /// the player can then ask about each one for where it was seen and where it was going.
+    /// <list type="bullet">
+    /// <item>Three questions (enemy war parties, bandit gangs, bandit hideouts), each paid for separately
+    /// with gold or goods, or talked round with the vanilla persuasion system.</item>
+    /// <item>The notable answers with a short list (kind of party and head count); the player can then ask
+    /// about each one for where it was seen and where it was going.</item>
+    /// <item>The notable may not know, or may lie, depending on how they feel about the player compared with
+    /// the party in question. A player whose Charm, Scouting or Roguery beats theirs sees through the lie and
+    /// can press them for the truth.</item>
+    /// </list>
     /// Nothing is saved: the "asked recently" memory resets when a save is loaded.
     /// </summary>
     public sealed class NotableIntelBehavior : CampaignBehaviorBase
@@ -47,6 +51,9 @@ namespace VillageIntel
         private Pending _pending;
         private IntelReport _current;    // the answer being discussed, for the follow-up questions
         private int _detailIndex = -1;
+
+        private bool _lastDetailWasLie;  // the follow-up answer just given was a lie the player can see through
+        private bool _pressSucceeded;
 
         private PersuasionTask _task;
         private PersuasionDifficulty _difficulty;
@@ -690,8 +697,6 @@ namespace VillageIntel
             Hero.MainHero.AddSkillXp(best, 15f);
         }
 
-        private bool _lastDetailWasLie;   // the follow-up answer just given was a lie the player can see through
-
         /// <summary>
         /// The "you're lying" reply. Its wording is the flavor: it says how the player saw through the notable,
         /// based on the skill with the biggest lead, or calls out the follow-up answer that was just given.
@@ -713,8 +718,6 @@ namespace VillageIntel
             MBTextManager.SetTextVariable("VI_PRESS_LINE", line);
             return true;
         }
-
-        private bool _pressSucceeded;
 
         /// <summary>Call the notable a liar. Your skill lead and their liking for you decide whether they cave.</summary>
         private void Press()

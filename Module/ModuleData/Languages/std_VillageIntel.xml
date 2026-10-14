@@ -127,6 +127,7 @@
     <string id="vi_mcm_LieChancePerPoint" text="Lie chance per relation point" />
     <string id="vi_mcm_LieChancePerPoint_hint" text="Trust = (notable's relation with you) - (notable's relation with the party). Each point of trust lowers the lie chance by this much, and each point of distrust raises it." />
     <string id="vi_mcm_MaxLieChance" text="Maximum chance to lie" />
+    <string id="vi_mcm_MaxLieChance_hint" text="No notable lies more often than this, however much they dislike you or like the party in question." />
     <string id="vi_mcm_LiePerDishonorLevel" text="Dishonesty per Honor level" />
     <string id="vi_mcm_LiePerDishonorLevel_hint" text="Each level of negative Honor adds this to the notable's lie chance; each positive level takes half of it away." />
     <string id="vi_mcm_OwnRealmLoyalty" text="Loyalty to own realm" />
@@ -167,14 +168,8 @@
     <string id="vi_mcm_GoodsMarkup" text="Goods markup" />
     <string id="vi_mcm_GoodsMarkup_hint" text="How much base value of goods the notable wants for each denar of the price." />
     <string id="vi_mcm_RelationOnPay" text="Relation gained when paying" />
+    <string id="vi_mcm_RelationOnPay_hint" text="Relation you gain with a notable each time you pay them in gold or goods." />
     <string id="vi_mcm_AllowPersuasion" text="Allow persuasion" />
     <string id="vi_mcm_AllowPersuasion_hint" text="When a notable asks to be paid, you can instead try to talk them round with the game's normal persuasion system (one try per question). Success gets the answer for free and gives skill experience like other persuasions." />
-    <string id="vi_mcm_group_debug" text="Debug" />
-    <string id="vi_mcm_DebugMode" text="Debug mode" />
-    <string id="vi_mcm_DebugMode_hint" text="For testing. After each answer the chat shows every party or hideout the notable was asked about, whether they told the truth, lied or left it out, and what was really there. Notables still name their price, but paying costs you nothing: the chat says what you would have been charged instead." />
-    <string id="vi_mcm_DebugAlwaysKnow" text="Debug: notables know everything" />
-    <string id="vi_mcm_DebugAlwaysKnow_hint" text="Only in debug mode. Notables always know about everything in range, so only the lie rolls are random." />
-    <string id="vi_mcm_DebugNoCooldown" text="Debug: no repeat cooldown" />
-    <string id="vi_mcm_DebugNoCooldown_hint" text="Only in debug mode. Every question rolls a fresh answer instead of repeating the last one." />
   </strings>
 </base>

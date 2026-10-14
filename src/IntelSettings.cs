@@ -59,9 +59,23 @@ namespace VillageIntel
         public static float GoodsMarkup => Math.Max(0.1f, S.GoodsMarkup);
         public static int RelationOnPay => Math.Max(0, S.RelationOnPay);
 
-        // ---------------- Debug (Debug group in the mod menu) ----------------
-        public static bool DebugMode => S.DebugMode;
-        public static bool DebugAlwaysKnow => S.DebugMode && S.DebugAlwaysKnow;
-        public static bool DebugNoCooldown => S.DebugMode && S.DebugNoCooldown;
+        // ---------------- Debug (not in the mod menu) ----------------
+        // For troubleshooting: set to true and rebuild. Keep them false for releases.
+
+        /// <summary>
+        /// After each answer the chat shows every party or hideout the notable was asked about, whether they told
+        /// the truth, lied or left it out, and what was really there, plus the noticing and pressing rolls.
+        /// Notables still ask to be paid, but paying costs nothing: the chat says what you would have been charged.
+        /// </summary>
+        public static bool DebugMode = false;
+
+        /// <summary>Notables always know about everything in range, so only the lie rolls are random. Needs DebugMode.</summary>
+        public static bool DebugAlwaysKnowFlag = false;
+
+        /// <summary>Every question rolls a fresh answer instead of repeating the last one. Needs DebugMode.</summary>
+        public static bool DebugNoCooldownFlag = false;
+
+        public static bool DebugAlwaysKnow => DebugMode && DebugAlwaysKnowFlag;
+        public static bool DebugNoCooldown => DebugMode && DebugNoCooldownFlag;
     }
 }

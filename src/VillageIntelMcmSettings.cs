@@ -82,7 +82,8 @@ namespace VillageIntel
         [SettingPropertyGroup(Honesty, GroupOrder = 2)]
         public float LieChancePerPoint { get; set; } = 0.005f;
 
-        [SettingPropertyFloatingInteger("{=vi_mcm_MaxLieChance}Maximum chance to lie", 0f, 1f, "0%", Order = 2, RequireRestart = false)]
+        [SettingPropertyFloatingInteger("{=vi_mcm_MaxLieChance}Maximum chance to lie", 0f, 1f, "0%", Order = 2, RequireRestart = false,
+            HintText = "{=vi_mcm_MaxLieChance_hint}No notable lies more often than this, however much they dislike you or like the party in question.")]
         [SettingPropertyGroup(Honesty, GroupOrder = 2)]
         public float MaxLieChance { get; set; } = 0.9f;
 
@@ -184,7 +185,8 @@ namespace VillageIntel
         [SettingPropertyGroup(Price, GroupOrder = 3)]
         public float GoodsMarkup { get; set; } = 1.2f;
 
-        [SettingPropertyInteger("{=vi_mcm_RelationOnPay}Relation gained when paying", 0, 10, "0", Order = 9, RequireRestart = false)]
+        [SettingPropertyInteger("{=vi_mcm_RelationOnPay}Relation gained when paying", 0, 10, "0", Order = 9, RequireRestart = false,
+            HintText = "{=vi_mcm_RelationOnPay_hint}Relation you gain with a notable each time you pay them in gold or goods.")]
         [SettingPropertyGroup(Price, GroupOrder = 3)]
         public int RelationOnPay { get; set; } = 1;
 
@@ -192,23 +194,5 @@ namespace VillageIntel
             HintText = "{=vi_mcm_AllowPersuasion_hint}When a notable asks to be paid, you can instead try to talk them round with the game's normal persuasion system (one try per question). Success gets the answer for free and gives skill experience like other persuasions.")]
         [SettingPropertyGroup(Price, GroupOrder = 3)]
         public bool AllowPersuasion { get; set; } = true;
-
-        // ---------------- Debug ----------------
-        private const string Debug = "{=vi_mcm_group_debug}Debug";
-
-        [SettingPropertyBool("{=vi_mcm_DebugMode}Debug mode", Order = 0, RequireRestart = false,
-            HintText = "{=vi_mcm_DebugMode_hint}For testing. After each answer the chat shows every party or hideout the notable was asked about, whether they told the truth, lied or left it out, and what was really there. Notables still name their price, but paying costs you nothing: the chat says what you would have been charged instead.")]
-        [SettingPropertyGroup(Debug, GroupOrder = 4)]
-        public bool DebugMode { get; set; } = false;
-
-        [SettingPropertyBool("{=vi_mcm_DebugAlwaysKnow}Debug: notables know everything", Order = 1, RequireRestart = false,
-            HintText = "{=vi_mcm_DebugAlwaysKnow_hint}Only in debug mode. Notables always know about everything in range, so only the lie rolls are random.")]
-        [SettingPropertyGroup(Debug, GroupOrder = 4)]
-        public bool DebugAlwaysKnow { get; set; } = false;
-
-        [SettingPropertyBool("{=vi_mcm_DebugNoCooldown}Debug: no repeat cooldown", Order = 2, RequireRestart = false,
-            HintText = "{=vi_mcm_DebugNoCooldown_hint}Only in debug mode. Every question rolls a fresh answer instead of repeating the last one.")]
-        [SettingPropertyGroup(Debug, GroupOrder = 4)]
-        public bool DebugNoCooldown { get; set; } = false;
     }
 }

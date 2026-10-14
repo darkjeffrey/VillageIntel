@@ -69,21 +69,22 @@ If you ask the same notable the same question within 24 hours, you get the same 
 
 All the numbers above can be changed in **Mod Options → Village Intel** (MCM). The same page has options to allow town notables, and to mark the map when a notable tells the truth about a hideout (off by default, because it gives the liars away).
 
-### Debug mode
+### Debugging
 
-Turn on **Debug mode** in the Debug group of the same page. After each answer, the chat shows every party or hideout the notable was asked about, together with what was really there (size, nearest place, destination), the chance rolls, and one of these results:
+There are debug switches for troubleshooting at the bottom of `src/IntelSettings.cs`. They aren't in the mod menu. Set them to `true` and rebuild:
 
-- **TRUTH**
-- **LIED**, with what they said instead
-- **LIED, left it out**
-- **DIDN'T KNOW**
+- `DebugMode`: after each answer, the chat shows every party or hideout the notable was asked about, together with what was really there (size, nearest place, destination), the chance rolls, and one of these results:
+  - **TRUTH**
+  - **LIED**, with what they said instead
+  - **LIED, left it out**
+  - **DIDN'T KNOW**
+  - **LIED, then CONFESSED**
 
-Notables still ask to be paid in debug mode, but paying costs nothing. The chat tells you what you would have been charged instead (gold, or the goods and their value) and the relation you would have gained. You can pay even if you don't have enough denars. When you ask a follow-up question, the chat also says whether that particular answer was the truth or a lie.
+  It also shows the skill comparison for noticing lies and the pressing roll, and says whether each follow-up answer was true. Notables still ask to be paid, but paying costs nothing: the chat shows what you would have been charged and the relation you would have gained.
+- `DebugAlwaysKnowFlag`: notables know about everything in range, so only the lie rolls are random. Only works with `DebugMode` on.
+- `DebugNoCooldownFlag`: every question gets a fresh roll. Only works with `DebugMode` on.
 
-Two extra switches only work while debug mode is on:
-
-- **Notables know everything**: only the lie rolls stay random.
-- **No repeat cooldown**: every question gets a fresh roll.
+Keep them `false` for releases.
 
 ## Translating
 
