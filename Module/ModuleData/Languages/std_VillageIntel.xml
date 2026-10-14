@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Village Intel: English text, and the template for translations.
+  To translate, copy this file into a language folder (for example DE/std_VillageIntel_deu.xml),
+  change the <tag language> to that language and translate each text attribute. Keep the id
+  and every {VARIABLE} unchanged. Then list the file in that folder's language_data.xml.
+  See the README for an example.
+-->
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="English" />
+  </tags>
+  <strings>
+    <string id="vi_unknown_bandits" text="bandits" />
+    <string id="vi_kind_army" text="an army of {SIZE}" />
+    <string id="vi_ref_army" text="the army of {SIZE}" />
+    <string id="vi_kind_patrol" text="a patrol of {SIZE}" />
+    <string id="vi_ref_patrol" text="the patrol of {SIZE}" />
+    <string id="vi_kind_lord" text="a lord's war party of {SIZE}" />
+    <string id="vi_ref_lord" text="the war party of {SIZE}" />
+    <string id="vi_kind_bandits" text="a band of {BANDITS}, {SIZE}" />
+    <string id="vi_ref_bandits" text="the {BANDITS}, {SIZE}" />
+    <string id="vi_kind_hideout" text="a hideout of {BANDITS} with {SIZE}" />
+    <string id="vi_kind_hideout_empty" text="a hideout of {BANDITS}" />
+    <string id="vi_ref_hideout" text="the {BANDITS} hideout" />
+    <string id="vi_detail_hideout" text="It's out in the wilds {WHERE}." />
+    <string id="vi_detail_bandits_going" text="They were prowling {WHERE}, {ACTIVITY}." />
+    <string id="vi_detail_bandits_seen" text="They were prowling {WHERE}." />
+    <string id="vi_detail_party_at" text="That's {PARTY} of {FACTION}. They're {ACTIVITY}." />
+    <string id="vi_detail_party_going" text="That's {PARTY} of {FACTION}. They were seen {WHERE}, {ACTIVITY}." />
+    <string id="vi_detail_party_seen" text="That's {PARTY} of {FACTION}. They were seen {WHERE}." />
+    <string id="vi_unknown_realm" text="an enemy realm" />
+    <string id="vi_where_unknown" text="not far from here" />
+    <string id="vi_where_here" text="close to this village" />
+    <string id="vi_where_near" text="near {SETTLEMENT}" />
+    <string id="vi_act_raid" text="on their way to raid {SETTLEMENT}" />
+    <string id="vi_act_patrol" text="patrolling around {SETTLEMENT}" />
+    <string id="vi_act_besiege" text="besieging {SETTLEMENT}" />
+    <string id="vi_act_staying" text="staying at {SETTLEMENT}" />
+    <string id="vi_act_heading" text="heading for {SETTLEMENT}" />
+    <string id="vi_size_handful" text="a handful of men" />
+    <string id="vi_size_about" text="about {COUNT} men" />
+    <string id="vi_none_enemy" text="I haven't seen any war bands around here lately. It's been quiet, thank the heavens." />
+    <string id="vi_none_bandit" text="No bandits that I know of. Not around here, anyway." />
+    <string id="vi_none_hideout" text="If those scum have a camp near here, I don't know where it is." />
+    <string id="vi_list_separator" text=", " />
+    <string id="vi_list_last" text="{ITEMS}, and {LAST}" />
+    <string id="vi_summary_enemy" text="I've seen {LIST}." />
+    <string id="vi_summary_bandit" text="There's been {LIST} prowling about." />
+    <string id="vi_summary_hideout" text="I know of {LIST}." />
+    <string id="vi_summary_friend" text="Keep this between us, friend. {SUMMARY} Ask if you want to know more about any of them." />
+    <string id="vi_summary_plain" text="Keep this between us. {SUMMARY} Ask if you want to know more." />
+    <string id="vi_ask" text="What news is there of trouble around here?" />
+    <string id="vi_refused_ok" text="Suit yourself." />
+    <string id="vi_topic_enemy" text="Have any enemy war parties been seen near here?" />
+    <string id="vi_topic_bandit" text="Have there been bandits on the roads?" />
+    <string id="vi_topic_hideout" text="Do you know where the bandits make camp?" />
+    <string id="vi_topic_cancel" text="Never mind." />
+    <string id="vi_pay_gold" text="Here, take {VI_GOLD}{GOLD_ICON}." />
+    <string id="vi_pay_goods" text="Take {VI_GOODS} from my wagons." />
+    <string id="vi_persuade" text="Surely we can come to an understanding without coin." />
+    <string id="vi_pay_decline" text="I'll find out some other way." />
+    <string id="vi_refuse_1" text="Trouble? The only trouble I see is standing in front of me. I've nothing to say to you." />
+    <string id="vi_refuse_2" text="Ask someone else. I don't help the likes of you." />
+    <string id="vi_hub_friend" text="For you? Ask away. What do you want to know?" />
+    <string id="vi_hub_neutral" text="Depends what kind of trouble you mean." />
+    <string id="vi_hub_cold" text="Hmph. What is it you want to know?" />
+    <string id="vi_goods" text="{AMOUNT} {ITEM}" />
+    <string id="vi_repeat" text="As I told you before. {ANSWER}" />
+    <string id="vi_free_friend" text="For a friend, no charge. {ANSWER}" />
+    <string id="vi_keep_coin" text="{ANSWER} Keep your coin." />
+    <string id="vi_risk_enemy" text="If the lords found out I'd been telling strangers about their movements, it'd be my neck." />
+    <string id="vi_risk_bandits" text="Those cutthroats have friends in every village. If word got out that I talked, I'd end up in a ditch." />
+    <string id="vi_risk_hideout" text="Tell you where their camp is? If they ever learned it was me, they'd burn my house down with my family in it." />
+    <string id="vi_offer_either" text="Still... some coin, or some supplies from your wagons, could change my mind." />
+    <string id="vi_offer_goods" text="Coin won't fill our granary, but some supplies from your wagons might change my mind." />
+    <string id="vi_offer_gold" text="Still... some coin could change my mind." />
+    <string id="vi_quote" text="{RISK} {OFFER}" />
+    <string id="vi_not_enough_gold" text="You don't have enough denars." />
+    <string id="vi_gave_goods" text="You gave {GOODS} to {NOTABLE}." />
+    <string id="vi_persuade_success" text="...Fine. You make a fair point. But you never heard any of this from me." />
+    <string id="vi_persuade_cancel" text="Forget it. Let's talk about payment." />
+    <string id="vi_persuaded_go_on" text="You have my word. Go on." />
+    <string id="vi_pers_prompt" text="Talk, then. Why should I stick my neck out for you?" />
+    <string id="vi_pers_fail" text="No. Fine words won't keep me safe. Pay, or find someone else to ask." />
+    <string id="vi_pers_later" text="Not today." />
+    <string id="vi_pers_charm" text="Help me now and I'll remember it. A friend like me is worth more than a few coins." />
+    <string id="vi_pers_valor" text="Tell me where they are and I'll deal with them myself. That keeps your people safer than any purse could." />
+    <string id="vi_pers_roguery" text="Nobody will ever know it came from you. I never name my sources." />
+    <string id="vi_ask_detail" text="What about {THING}?" />
+    <string id="vi_details_done" text="That's all I needed to know." />
+    <string id="vi_details_none" text="I see. Thank you anyway." />
+    <string id="vi_hideout_marked" text="A hideout has been marked on your map." />
+    <string id="vi_press_again" text="There it is again. You can't even keep your story straight. Enough lies. The truth, now." />
+    <string id="vi_press_charm" text="You won't even meet my eye, and that smile came a moment too late. You're holding something back. The truth, now." />
+    <string id="vi_press_scouting" text="That's not what the tracks on these roads tell me. I know this country. Don't lie to me. The truth, now." />
+    <string id="vi_press_roguery" text="That came out a little too smooth, like a story you'd rehearsed. I know a lie when I hear one. The truth, now." />
+    <string id="vi_press_ok" text="...Keep your voice down! Fine. I didn't want any trouble, that's all. Here's how it really is. {SUMMARY}" />
+    <string id="vi_press_fail_1" text="You'd call me a liar in my own village? I've told you what I know. Take it or leave it." />
+    <string id="vi_press_fail_2" text="I don't care for your tone. That's all you'll get from me." />
+    <string id="vi_mcm_title" text="Village Intel" />
+    <string id="vi_mcm_group_general" text="General" />
+    <string id="vi_mcm_Enabled" text="Enable" />
+    <string id="vi_mcm_Enabled_hint" text="Turn the 'ask about the area' dialogue on or off." />
+    <string id="vi_mcm_AllowTownNotables" text="Town notables too" />
+    <string id="vi_mcm_AllowTownNotables_hint" text="Off: only village notables (headmen and rural notables) can be asked. On: town notables (merchants, artisans, gang leaders) can be asked as well." />
+    <string id="vi_mcm_SearchRadius" text="Search radius" />
+    <string id="vi_mcm_SearchRadius_hint" text="How far from the village (in campaign map units) a notable can have heard of parties and hideouts. Roughly 5 units is an hour's ride." />
+    <string id="vi_mcm_MaxReports" text="Most sightings per answer" />
+    <string id="vi_mcm_MaxReports_hint" text="The most parties or hideouts a notable will describe in one answer, nearest first." />
+    <string id="vi_mcm_CooldownHours" text="Hours before asking again" />
+    <string id="vi_mcm_CooldownHours_hint" text="Within this many hours, asking the same notable the same question repeats their earlier answer for free instead of giving a new one." />
+    <string id="vi_mcm_RevealHideouts" text="Truthful hideout reports mark the map" />
+    <string id="vi_mcm_RevealHideouts_hint" text="When a notable tells the truth about a hideout, it is marked on the campaign map. Handy, but it also tells you when a notable lied." />
+    <string id="vi_mcm_group_knowledge" text="Knowledge" />
+    <string id="vi_mcm_KnowChanceNear" text="Chance to know: on the doorstep" />
+    <string id="vi_mcm_KnowChanceNear_hint" text="Chance a notable has heard of a party right next to the village. It falls off evenly to the far value at the edge of the search radius." />
+    <string id="vi_mcm_KnowChanceFar" text="Chance to know: edge of radius" />
+    <string id="vi_mcm_KnowChanceFar_hint" text="Chance a notable has heard of a party at the edge of the search radius." />
+    <string id="vi_mcm_HideoutKnowBonus" text="Bonus for hideouts" />
+    <string id="vi_mcm_HideoutKnowBonus_hint" text="Hideouts don't move, so locals are more likely to know where they are." />
+    <string id="vi_mcm_ArmyKnowBonus" text="Bonus for armies" />
+    <string id="vi_mcm_ArmyKnowBonus_hint" text="Armies are hard to miss." />
+    <string id="vi_mcm_group_honesty" text="Honesty" />
+    <string id="vi_mcm_BaseLieChance" text="Base chance to lie" />
+    <string id="vi_mcm_BaseLieChance_hint" text="Chance to lie about a sighting when the notable likes you exactly as much as they like the party in question." />
+    <string id="vi_mcm_LieChancePerPoint" text="Lie chance per relation point" />
+    <string id="vi_mcm_LieChancePerPoint_hint" text="Trust = (notable's relation with you) - (notable's relation with the party). Each point of trust lowers the lie chance by this much, and each point of distrust raises it." />
+    <string id="vi_mcm_MaxLieChance" text="Maximum chance to lie" />
+    <string id="vi_mcm_LiePerDishonorLevel" text="Dishonesty per Honor level" />
+    <string id="vi_mcm_LiePerDishonorLevel_hint" text="Each level of negative Honor adds this to the notable's lie chance; each positive level takes half of it away." />
+    <string id="vi_mcm_OwnRealmLoyalty" text="Loyalty to own realm" />
+    <string id="vi_mcm_OwnRealmLoyalty_hint" text="Added to a notable's relation with a party that belongs to the village's own realm (they protect their own lords)." />
+    <string id="vi_mcm_EnemyRealmHatred" text="Hatred of the village's enemies" />
+    <string id="vi_mcm_EnemyRealmHatred_hint" text="Subtracted from a notable's relation with a party whose realm is at war with the village's realm." />
+    <string id="vi_mcm_BanditBaseRelation" text="Relation with bandits" />
+    <string id="vi_mcm_BanditBaseRelation_hint" text="A notable's relation with bandits before Honor is applied. Villagers usually hate them." />
+    <string id="vi_mcm_BanditRelationPerHonor" text="Bandit sympathy per Honor level" />
+    <string id="vi_mcm_BanditRelationPerHonor_hint" text="Each level of negative Honor makes the notable this much friendlier with bandits (they may be in league with them); each positive level makes them this much more hostile." />
+    <string id="vi_mcm_NoticeSkillLead" text="Skill lead to notice a lie" />
+    <string id="vi_mcm_NoticeSkillLead_hint" text="You notice a lie when your Charm, Scouting or Roguery is higher than the notable's by more than this. 0 means any higher skill is enough." />
+    <string id="vi_mcm_PressBaseChance" text="Pressing: base chance" />
+    <string id="vi_mcm_PressBaseChance_hint" text="Chance that calling out a lie makes the notable tell the truth, before your skill lead and relation are added." />
+    <string id="vi_mcm_PressChancePerPoint" text="Pressing: chance per skill or relation point" />
+    <string id="vi_mcm_PressChancePerPoint_hint" text="Each point by which your best skill (Charm, Scouting or Roguery) beats the notable's, and each point of relation, adds this to the pressing chance. Bad relation takes it away." />
+    <string id="vi_mcm_PressFailRelation" text="Pressing: relation lost on failure" />
+    <string id="vi_mcm_PressFailRelation_hint" text="How much relation you lose when you call a notable a liar and they won't back down." />
+    <string id="vi_mcm_group_price" text="Price" />
+    <string id="vi_mcm_RefuseRelation" text="Relation to talk at all" />
+    <string id="vi_mcm_RefuseRelation_hint" text="Notables whose relation with you is at or below this refuse to tell you anything." />
+    <string id="vi_mcm_FreeRelation" text="Relation for free information" />
+    <string id="vi_mcm_FreeRelation_hint" text="Notables whose relation with you is at or above this tell you for free." />
+    <string id="vi_mcm_EnemyBasePrice" text="Price: enemy parties" />
+    <string id="vi_mcm_EnemyBasePrice_hint" text="Base asking price in denars for news of enemy war parties, at 0 relation." />
+    <string id="vi_mcm_BanditBasePrice" text="Price: bandit gangs" />
+    <string id="vi_mcm_BanditBasePrice_hint" text="Base asking price in denars for news of roaming bandit gangs, at 0 relation." />
+    <string id="vi_mcm_HideoutBasePrice" text="Price: bandit hideouts" />
+    <string id="vi_mcm_HideoutBasePrice_hint" text="Base asking price in denars for the whereabouts of bandit hideouts, at 0 relation." />
+    <string id="vi_mcm_PricePerBadRelation" text="Extra price per bad relation point" />
+    <string id="vi_mcm_PricePerBadRelation_hint" text="Each point of relation below 0 raises the price by this fraction. Each point above 0 lowers it by half as much." />
+    <string id="vi_mcm_MaxCharmDiscount" text="Charm discount at 300" />
+    <string id="vi_mcm_MaxCharmDiscount_hint" text="Discount you get with 300 Charm. Scales linearly with your Charm skill." />
+    <string id="vi_mcm_GoodsChance" text="Chance goods are accepted" />
+    <string id="vi_mcm_GoodsChance_hint" text="Chance the notable will take food or trade goods from your inventory as payment, if you have enough." />
+    <string id="vi_mcm_GoodsOnlyChance" text="Chance only goods will do" />
+    <string id="vi_mcm_GoodsOnlyChance_hint" text="When goods are accepted, the chance the notable refuses coin and wants the goods instead." />
+    <string id="vi_mcm_GoodsMarkup" text="Goods markup" />
+    <string id="vi_mcm_GoodsMarkup_hint" text="How much base value of goods the notable wants for each denar of the price." />
+    <string id="vi_mcm_RelationOnPay" text="Relation gained when paying" />
+    <string id="vi_mcm_AllowPersuasion" text="Allow persuasion" />
+    <string id="vi_mcm_AllowPersuasion_hint" text="When a notable asks to be paid, you can instead try to talk them round with the game's normal persuasion system (one try per question). Success gets the answer for free and gives skill experience like other persuasions." />
+    <string id="vi_mcm_group_debug" text="Debug" />
+    <string id="vi_mcm_DebugMode" text="Debug mode" />
+    <string id="vi_mcm_DebugMode_hint" text="For testing. After each answer the chat shows every party or hideout the notable was asked about, whether they told the truth, lied or left it out, and what was really there. Notables still name their price, but paying costs you nothing: the chat says what you would have been charged instead." />
+    <string id="vi_mcm_DebugAlwaysKnow" text="Debug: notables know everything" />
+    <string id="vi_mcm_DebugAlwaysKnow_hint" text="Only in debug mode. Notables always know about everything in range, so only the lie rolls are random." />
+    <string id="vi_mcm_DebugNoCooldown" text="Debug: no repeat cooldown" />
+    <string id="vi_mcm_DebugNoCooldown_hint" text="Only in debug mode. Every question rolls a fresh answer instead of repeating the last one." />
+  </strings>
+</base>
